@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Vihanga LMS — Complete MERN Stack Web Development Programme." />
+  <title>Vihanga LMS — Learn. Build. Ship.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">V</div><span>Vihanga LMS</span></div>
+      <div><div class="sidebar-label">Your workspace</div><nav class="nav" aria-label="Primary navigation">
+        <button class="active" data-view="roadmap"><span class="nav-icon">01</span><span>Roadmap</span></button>
+        <button data-view="weekly"><span class="nav-icon">02</span><span>Weekly plan</span></button>
+        <button data-view="projects"><span class="nav-icon">03</span><span>Project board</span></button>
+        <button data-view="resources"><span class="nav-icon">04</span><span>Resources</span></button>
+      </nav></div>
+      <div class="side-foot"><div class="sidebar-label">Course status</div><strong id="sideProgress">0% complete</strong><span>One-to-one · 26 weeks</span><br><span>Next check-in: Week 01</span><button class="reset-link" id="resetProgress">Reset saved progress</button></div>
+    </aside>
+    <main class="main">
+      <header class="topbar"><div class="crumb">Vihanga LMS / <span id="crumbView">Roadmap</span></div><div class="top-actions"><label class="search"><input id="globalSearch" type="search" placeholder="Search the course..." aria-label="Search the course"></label><div class="avatar">VS</div></div></header>
+      <div class="content"><div id="appView"></div><div class="footer-note"><span>Vihanga LMS · Learn. Build. Ship.</span><span>Local instructor workspace · progress saved in this browser</span></div></div>
+    </main>
+  </div>
+  <dialog id="projectDialog" class="project-dialog"><button class="dialog-close" aria-label="Close">×</button><div id="projectDetail"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
